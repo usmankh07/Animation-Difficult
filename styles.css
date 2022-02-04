@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+svg {
+    /* width: 80%; */
+}
+.section-1 {
+    width: 100%;
+    height: 60vh;
+}
+.swift-img, .django-img, .linux-img, .javascript-img, .apple-img {
+    /* display: flex; */
+    /* width: 5%; */
+    height: 11% ;
+    /* padding: 5px; */
+}
+.swift-img img {
+    position: absolute;
+    width: 5%;
+    top: 100px;
+    right: 20px;
+    /* border-radius: 100px; */
+}
+.django-img img {
+    position: absolute;
+    width: 5%;
+    top: 400px;
+    right: 90px;
+    /* border-radius: 100px; */
+}
+.javascript-img img {
+    position: absolute;
+    width: 5%;
+    top: 200px;
+    right: 720px;
+    /* border-radius: 100px; */
+}
+.apple-img img {
+    position: absolute;
+    width: 5%;
+    top: 50px;
+    right: 350px;
+    
+    /* border-radius: 100px; */
+}
+.linux-img img {
+    /* border-radius: 100px; */
+    position: absolute;
+    width: 5%;
+    top: 300px;
+    right: 600px;
+}
+
+
+
+.heapware-png {
+    position: absolute;
+    animation-name: heapware 1s linear infinite;
+    /* background-color: red; */
+    top: 150px;
+    right: 200px;
+}
+@keyframes heapware {
+    0%{
+        transform: rotate(360deg);
+    }
+}
+.heapware-animation {
+    transform: rotate(45deg);
+    transform: 3s ease;
+}
+.heapware-svg:hover {
+    transform: translate(10px, 10px);
+    transition: 2s ease;
+}
+
+.heapware-section {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(225, 225, 225);
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+.section-2 {
+    height: 80vh;
+}
