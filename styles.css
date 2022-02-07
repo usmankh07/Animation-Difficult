@@ -2,68 +2,139 @@
     margin: 0;
     padding: 0;
 }
-svg {
-    /* width: 80%; */
+body {
+    padding: 0px;
+    /* overflow: hidden; */
 }
 .section-1 {
     width: 100%;
     height: 60vh;
+    padding: 0px;
 }
-.swift-img, .django-img, .linux-img, .javascript-img, .apple-img {
-    /* display: flex; */
-    /* width: 5%; */
-    height: 11% ;
-    /* padding: 5px; */
+/* Icons CSS */
+
+.parent-icon {
+    position: relative;
 }
-.swift-img img {
+
+#javascript, #linux, #apple, #django, #angular, #swift {
+    width: 50px;
+    background-color: rgb(34, 23, 95, 0.3);
+    padding: 10px;
+    border-radius: 50%;
+}
+#android, #node, #c, #csharp, #drupal, #heroku {
+    width: 50px;
+    background-color: rgb(34, 23, 95, 0.3);
+    /* background-color: #8996c9; */
+    padding: 10px;
+    border-radius: 50%;
+}
+#javascript {
     position: absolute;
-    width: 5%;
-    top: 100px;
-    right: 20px;
-    /* border-radius: 100px; */
+    top: 150px;
+    right: 420px;
 }
-.django-img img {
+#linux {
     position: absolute;
-    width: 5%;
+    top: 290px;
+    right: 480px;
+}
+#apple {
+    position: absolute;
+    top: 280px;
+    right: 99px;
+}
+#django {
+    position: absolute;
+    top: 60px;
+    right: 850px;
+}
+#swift {
+    position: absolute;
     top: 400px;
-    right: 90px;
-    /* border-radius: 100px; */
+    right: 250px;
 }
-.javascript-img img {
+#angular {
     position: absolute;
-    width: 5%;
-    top: 200px;
-    right: 720px;
-    /* border-radius: 100px; */
-}
-.apple-img img {
-    position: absolute;
-    width: 5%;
     top: 50px;
-    right: 350px;
-    
-    /* border-radius: 100px; */
+    right: 250px;
 }
-.linux-img img {
-    /* border-radius: 100px; */
+#node {
+    width: 100px;
     position: absolute;
-    width: 5%;
-    top: 300px;
+    top: 400px;
+    right: 550px;
+}
+#drupal {
+    position: absolute;
+    top: -90px;
     right: 600px;
 }
+#android {
+    position: relative;
+    top: 250px;
+    right: 690px;
+}
+#c {
+    position: relative;
+    top: 300px;
+    right: 120px;
+}
+#csharp {
+    position: relative;
+    top: 80px;
+    right: 120px;
+}
+#heroku {
+    position: relative;
+    top: 240px;
+    right: 350px;
+}
+
 
 
 
 .heapware-png {
     position: absolute;
-    animation-name: heapware 1s linear infinite;
+    background-color: rgb(34, 23, 95, 0.5);
+    /* width: 37%; */
+    width: 215px;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
     /* background-color: red; */
     top: 150px;
     right: 200px;
 }
-@keyframes heapware {
-    0%{
+/* #heapware {
+    animation: wobble 2s infinite;
+}
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
         transform: rotate(360deg);
+    }
+} */
+
+/* .django-animation, .javascript-animation, .apple-animation, .linux-animation, .swift-animation {
+    animation: rotation 3s infinite;
+} */
+/* @keyframes rotation {
+    0% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(-360deg);
     }
 }
 .heapware-animation {
@@ -73,16 +144,24 @@ svg {
 .heapware-svg:hover {
     transform: translate(10px, 10px);
     transition: 2s ease;
-}
+} */
 
 .heapware-section {
     display: flex;
     justify-content: flex-end;
     background-color: rgb(225, 225, 225);
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: relative;
 }
 .section-2 {
     height: 80vh;
+}
+#super-duper {
+    transform: rotate(45deg);
+    transition: transform 1s;
+}
+.heapware-png:hover {
+    transform: rotate(360deg);
+    transition: transform 1s;
 }

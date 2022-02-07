@@ -7,43 +7,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Animation</title>
+
+    <style>
+        body {
+            padding: 5px;
+        }
+
+        #container {
+            padding: 20px;
+            width: 100%;
+            height: 100vh;
+            background-color: #EEE;
+            text-align: center;
+        }
+
+        #hexagon {
+            animation: bobble 2s infinite;
+            /* animation-timing-function: ease-in; */
+        }
+
+        /* @keyframes bobble {
+            0% {
+                transform: translateY(10px);
+            }
+            50% {
+                transform: translateY(40px);
+            }
+            100% {
+                transform: translateY(10px);
+            }
+        } */
+        #hexagon:hover {
+            transform: scale3d(1.2, 1.2, 1) rotate(360deg);
+            /* transition: transform 1s; */
+        }
+
+        #hexagon {
+
+            transition: ease 1s;
+        }
+    </style>
 </head>
 
-<body onscroll="justScroll()">
-    <div class="section-1">
-        1st section is this.
+<body>
+
+
+
+    <div id="container">
+        <img alt="" id="hexagon" src="https://www.kirupa.com/images/hexagon.svg">
     </div>
 
     <div class="heapware-section">
-        <div class="animation-icons">
+       
 
-            <div class="swift-img">
-                <img class="swift-animation" src="./images/swift.png" alt="">
+        <div data-aos="zoom-out-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+            <div class="parent-icon">
+                    <img id="angular" src="./images/angular.png" alt="">
+                </div>
+                <div data-aos="zoom-out-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img id="swift" src="./images/swift.png" alt="">
+                </div>
+                <div data-aos="zoom-in-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img id="linux" src="./images/linux.png" alt="">
+                </div>
+                <div data-aos="zoom-out-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img id="apple" src="./images/apple.png" alt="">
+                </div>
+                <div data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img id="javascript" src="./images/javascript.png" alt="">
+                </div>
+                <div data-aos="zoom-in-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img id="django" src="./images/django.png" alt="">
+                </div>
+                <div data-aos="zoom-in-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img id="node" src="./images/node-js.png" alt="">
+                </div>
+                <div data-aos="zoom-in-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img id="android" src="./images/android.png" alt="">
+                </div>
+                <div data-aos="zoom-out-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img id="csharp" src="./images/csharp.png" alt="">
+                </div>
+                <div data-aos="zoom-out-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img id="c" src="./images/c.png" alt="">
+                </div>
+                <div data-aos="zoom-in-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img id="drupal" src="./images/drupal.png" alt="">
+                </div>
+                <div data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <img id="heroku" src="./images/heroku.png" alt="">
+                </div>
             </div>
-            <div class="linux-img">
-                <img class="linux-animation" src="./images/linux.png" alt="">
-            </div>
-            <div class="apple-img">
-                <img class="apple-animation" src="./images/apple.png" alt="">
-            </div>
-            <div class="javascript-img">
-                <img class="javascript-animation" src="./images/javascript.png" alt="">
-            </div>
-            <div class="django-img">
-                <img class="django-animation" src="./images/django.png" alt="">
+      
+            <!-- Hash to get the required animation -->
+            <div data-aos="slide-up" data-aos-easing="" data-aos-duration="500" data-aos-id="super-duper">
+                <div class="heapware-png">
+                <img id="heapware" src="./images/logo.png" alt="">
             </div>
         </div>
-
-        <div class="heapware-png">
-            <img src="./images/heapware.png.png" alt="">
-
-        </div>
     </div>
-    <div class="section-2">
-        last Section
+
+    <div id="container">
+        <img alt="" id="hexagon" src="https://www.kirupa.com/images/hexagon.svg">
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
